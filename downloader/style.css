@@ -1,0 +1,74 @@
+.container {
+
+    width: 400px; 
+    height: 240px;
+    
+    place-content: center; 
+    text-align: center;
+    
+    display: grid; 
+    background-color: white; 
+    color: slateblue; 
+    padding: 10px; 
+    
+    border-radius: 10px; 
+    gap: 30px;
+}
+form {
+    
+    display: flex;
+    
+    flex-direction: column;
+     align-items: center;
+    
+    justify-content: center; 
+    gap: 10px;
+    
+    }
+    
+.input {
+    
+    margin-top:-10px; 
+    width: 80%;
+    
+    height: 35px;
+    outline: none; 
+    border: 2px solid slateblue;
+    padding: 0 20px;
+    border-radius: 10px;
+
+    }
+.input::placeholder {
+
+        color: gray;
+        opacity: 0.8; }
+        
+        
+.input:focus { 
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2); 
+}
+        
+.downloadBtn { width: 130px;
+        
+        height: 30px; 
+        margin-top: 10px;
+        
+        cursor: pointer; 
+        pointer-events: none; 
+        color: white; 
+        
+        background-color: slateblue; 
+        border: none;
+        
+        border-radius: 10px; 
+        opacity: 0.5;
+}        
+.downloadBtn:hover {
+        
+        filter: brightness(1.2); 
+    }
+        
+.input:valid ~.downloadBtn { 
+    opacity: 1;        
+    pointer-events: auto;
+ }
